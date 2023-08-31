@@ -1,0 +1,16 @@
+.landing__hero{
+    background: linear-gradient(45deg, #41ffccdb, #e98080cc);
+    margin-top: -60px;
+    height: 100vh;
+    display: grid;
+}
+.my-large{
+    margin: 100px 0px;
+}
+.navbar{
+    background: transparent;
+}
+.landing__hero header{
+    display: grid;
+    place-items: center;
+}

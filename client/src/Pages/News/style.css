@@ -1,0 +1,47 @@
+.dFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.JustifySpace{
+    gap: 50px;
+}
+.card{
+    display: grid;
+    max-width: 45%;
+    min-width: 10%;
+    width: 30%;
+}
+.results__body{
+    padding: 10px 15px;
+}
+.result__body-container{
+    padding: 19px;
+    margin: 10px 0px;
+    box-shadow: 1px 2px 25px -15px black;
+}
+.provider__logo{
+    width: 10%;
+    height: auto;
+    margin: 5px 10px;
+}
+.card a{
+    background: #ab3259;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    /* width: 60%; */
+    /* margin: 10px auto; */
+    font-size: 14px;
+    height: 25px;
+    display: block;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.scrap__time{
+    display: block;
+    text-align: right;
+    font-weight: 500;
+    font-size: 12px;
+    color: #a2a2a2;
+}
