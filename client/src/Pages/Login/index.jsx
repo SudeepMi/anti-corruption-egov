@@ -34,7 +34,7 @@ const history = useNavigate();
             })
             await localStorage.setItem("token", res.data.token);
             await localStorage.setItem("user", JSON.stringify(res.data.user));
-            history("/");
+            window.location.href = "/"
           }
       }).catch(err => {
         toast.dismiss(intToast);

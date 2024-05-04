@@ -34,7 +34,7 @@ function Home() {
                 <div className="col-12">
                   <div className="row">
                     {pLoading ? <Loading /> : Publication.map((data,key)=>{
-                      return <div className="col-12 my-2">
+                      return <div className="col-12 my-2" key={key}>
                         <a href={data.link} className="publication_links">{key+1}. {data.title}</a>
                       </div>
                     })}
@@ -50,7 +50,7 @@ function Home() {
                 <div className="col-12">
                   <div className="row">
                     {nLoading ? <Loading/> : Notices.map((data,key)=>{
-                      return <div className="col-12 my-2">
+                      return <div className="col-12 my-2" key={key}>
                         <a href={data.link} className="notice_links">{key+1}. {data.title}</a>
                       </div>
                     })}
