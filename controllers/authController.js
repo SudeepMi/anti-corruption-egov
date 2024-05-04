@@ -50,7 +50,7 @@ const registerUser = asyncHandler(async (req, res) => {
       error: "",
       user: {
         _id: user._id,
-        username: user.name,
+        username: user.username,
         email: user.email,
         isAdmin: user.isAdmin,
       },

@@ -14,6 +14,9 @@ const history = useNavigate();
 
   const HandleRegister = (e) => {
     e.preventDefault();
+    if(Email=="" || Password=="" || Username==""){
+        return  toast.error("Fill the form");
+    }
     setLoading(true);
     const intToast = toast.loading("Registering")
       API.post("/auth/", {
@@ -114,9 +117,9 @@ const history = useNavigate();
               </a>
             </div>
             <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" name="username"id="username" onChange={(e)=>setUsername(e.target.value)} />
-            <input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
-            <input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
+            <input type="text" required placeholder="Name" name="username"id="username" onChange={(e)=>setUsername(e.target.value)} />
+            <input type="email" required placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
+            <input type="password" required placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
             <button onClick={(e)=>HandleRegister(e)}>
                 {isLoading ? "Loading..." : "Sign Up"}
             </button>
@@ -137,8 +140,8 @@ const history = useNavigate();
               </a>
             </div>
             <span>or use your account</span>
-            <input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
-            <input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
+            <input type="email" required placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
+            <input type="password" required placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
             <a href="/forgot-password">Forgot your password?</a>
             <button onClick={(e)=>HandleLogin(e)}>Sign In</button>
           </form>
