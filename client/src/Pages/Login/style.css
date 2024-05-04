@@ -9,6 +9,14 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+	position: relative;
+}
+.auth_wrapper::after{
+	background-color: white;
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 0.28;
 }
 
 .auth_wrapper h1 {
@@ -41,8 +49,7 @@
 
 .auth_wrapper button {
 	border-radius: 20px;
-	border: 1px solid #0c241d;
-	background-color: #252323;
+	background-color: #b62929;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -155,7 +162,7 @@
 }
 
 .overlay {
-    background: black;
+    background: rgb(38, 61, 137);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
