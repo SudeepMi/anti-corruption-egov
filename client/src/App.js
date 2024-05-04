@@ -34,7 +34,7 @@ function App() {
             <Route exact path='/news' element={<News />} />
             <Route exact path='/marketplace' element={<Marketplace />} />
             <Route exact path='/about' element={<About />} />u
-            <Route path="/dashboard" element={<Dashboard />} />
+            {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           </Route>
         </Routes>
       </Router>
