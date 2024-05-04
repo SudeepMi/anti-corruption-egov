@@ -9,7 +9,7 @@ function Navbar() {
     window.location.reload()
   }
   return (
-    User().user &&
+    User().user ?
     <nav className="navbar navbar-expand-lg navbar-dark">
       <Link className="navbar_brand" to="/">Anti Corruption Portal</Link>
       <Link className='navbar_links' to="/about">About Project</Link>
@@ -21,7 +21,7 @@ function Navbar() {
         <span className='mx-1'>{User().user?.username}</span>
       </Link>
       <button className='navbar_links btn btn_small_brand' onClick={() => LogOut()}>Logout</button>
-    </nav>
+    </nav> : ""
   )
 }
 
