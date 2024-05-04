@@ -1,0 +1,9 @@
+.about{
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.about b{
+    color: rgb(227, 10, 10);
+}

@@ -1,12 +1,14 @@
 
 .auth_wrapper {
-    background: #f6f5f7;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Nepal_rectangular.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
-    margin: 0px 0 50px;
+    height: 100vh;
 }
 
 .auth_wrapper h1 {
@@ -153,7 +155,7 @@
 }
 
 .overlay {
-    background: linear-gradient(to right, #a5ffd5, #165545);
+    background: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

@@ -21,6 +21,7 @@ const history = useNavigate();
         password: Password,
         email: Email,
       }).then(async(res) => {
+        console.log(res.data)
           if(res.status === 201){
            
             setLoading(false);
@@ -113,7 +114,7 @@ const history = useNavigate();
               </a>
             </div>
             <span>or use your email for registration</span>
-            <input type="text" placeholder="Name" onChange={(e)=>setUsername(e.target.value)} />
+            <input type="text" placeholder="Name" name="username"id="username" onChange={(e)=>setUsername(e.target.value)} />
             <input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
             <input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
             <button onClick={(e)=>HandleRegister(e)}>
@@ -158,7 +159,7 @@ const history = useNavigate();
               </button>
             </div>
             <div className="overlay-panel overlay-right">
-              <h1>ANYSCRAP</h1>
+              <h1>PORTAL</h1>
               <p>Enter your personal details and start journey with us</p>
               <button
                 className="ghost"

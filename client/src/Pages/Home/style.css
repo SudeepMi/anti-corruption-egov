@@ -1,5 +1,5 @@
 .landing__hero{
-    background: linear-gradient(45deg, #41ffccdb, #e98080cc);
+    /* background: linear-gradient(45deg, #41ffccdb, #e98080cc); */
     margin-top: -60px;
     height: 100vh;
     display: grid;
@@ -14,3 +14,18 @@
     display: grid;
     place-items: center;
 }
+.publication_links{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.notice_links{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.notice_links:hover{
+    text-decoration: underline;
+}
+
+

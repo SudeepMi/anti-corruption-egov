@@ -25,8 +25,7 @@ a{
     cursor: pointer;
 }
 .btn_small_brand{
-  color: white;
-    background: #41ffcc;
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
     border-radius: 20px;
     display: flex;
@@ -35,6 +34,7 @@ a{
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: black;
 }
 .btn_small_brand:hover{
   background: #2bffd5;
@@ -51,7 +51,7 @@ a{
   margin: 15px;
 }
 .card-header{
-  background: linear-gradient(45deg, #41ffccdb, #e98080cc) !important;
+  /* background: linear-gradient(45deg, #41ffccdb, #e98080cc) !important; */
 }
 .dFlex{
   display: flex;
